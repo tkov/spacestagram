@@ -1,15 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header>
+  <NavSearch title="Spacestagram"/>
+  </header>
+  <main>
+    <section class="images">
+    <Image></Image>
+    </section>
+  </main>
+  <footer></footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavSearch from './components/NavSearch.vue'
+import Image from './components/Image.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavSearch,
+    Image,
   }
 }
 </script>
@@ -22,5 +31,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
 }
 </style>
