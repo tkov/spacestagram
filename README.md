@@ -24,4 +24,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Deployed on Netlify
-spacestagr4m.netlify.app
+https://spacestagr4m.netlify.app
